@@ -1,6 +1,8 @@
 ---
-layout: home
+layout: archive
 title: Welcome
+permalink: /
+author_profile: true
 ---
 
 I’m **Iman Jalilvand**, a Postdoctoral Research Fellow at UBC Okanagan and founder of **InnoXR**.  
