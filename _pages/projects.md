@@ -28,7 +28,7 @@ permalink: /projects/
 - Designed full 3-credit course: Game Development with Unity  
 - Delivered live Unity coding sessions using C#  
 - Created Game Jam capstone where 150 students built  and published their working games on WebGL platform (itch.io) in 2 weeks
-- Sample outputs and GitHub: [UBCO COSC-416 GitHub](https://github.com/UBCO-COSC-416)
+- Sample outputs and GitHub: [UBCO COSC-416 GitHub](https://github.com/UBCO-COSC-416?view_as=public)
 
 ---
 
