@@ -58,8 +58,6 @@ Postdoctoral Research Fellow at UBC Okanagan, specializing in XR development, AI
 - HoloLens 2 simulation with gesture UI and real-time heat feedback
 - Industry-supported for commercialization
 
-### 🟩 Decision Support Tool with Bayesian Networks
-- Visualizes trade-offs in cost, emissions, and KPIs for CPG and biocomposite supply chains
 
 ### 🟥 Multi-Agent RL for Thermoforming Optimization
 - MARL with transfer learning validated via experimental IR camera setup
