@@ -22,7 +22,7 @@ repository               : "iman-jalilvand/iman-jalilvand.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 
 author:
-  avatar: /assets/img/profile.jpg
+  avatar           : assets/images/profile.png
   name             : "Iman Jalilvand"
   bio              : "Postdoctoral Researcher at UBC | XR & AI | Founder of InnoXR"
   location         : "British Columbia, Canada"
