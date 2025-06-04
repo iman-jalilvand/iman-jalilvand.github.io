@@ -14,7 +14,7 @@ title_separator          : "-"
 name                     : &name "Iman Jalilvand"
 description              : &description "XR, AI, and Interactive Simulation for Manufacturing"
 url                      : https://iman-jalilvand.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "iman-jalilvand/iman-jalilvand.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -22,7 +22,7 @@ repository               : "iman-jalilvand/iman-jalilvand.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 
 author:
-  avatar: "/assets/images/profile.png"
+  avatar: "profile.png"
   name             : "Iman Jalilvand"
   bio              : "Postdoctoral Researcher at UBC | XR & AI | Founder of InnoXR"
   location         : "British Columbia, Canada"
