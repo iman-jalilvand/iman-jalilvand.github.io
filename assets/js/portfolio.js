@@ -361,16 +361,9 @@
     PROJECTS.forEach(function (p) {
       var v = tileVisual(p), el = document.createElement('button');
       el.className = 'tile ' + p.size; el.dataset.cats = p.cats; el.setAttribute('aria-label', 'Open project: ' + p.title);
-      el.innerHTML = '<div class="vis ' + v.cls + '">' + v.html + '</div><div class="cap"><p class="meta">' + p.meta + '</p><h3>' + p.title + '</h3><p class="line">' + p.line + '</p><div class="skills-row">' +
+      el.innerHTML = '<div class="vis ' + v.cls + '">' + v.html + '<span class="open-pill" aria-hidden="true">Open project <svg viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg></span></div><div class="cap"><p class="meta">' + p.meta + '</p><h3>' + p.title + '</h3><p class="line">' + p.line + '</p><div class="skills-row">' +
         p.skills.slice(0, 4).map(function (s) { return '<span class="sk">' + s + '</span>'; }).join('') + '</div></div>';
       el.addEventListener('click', function () { pin(p); });
-      // Hover preview (mouse only): opens after a short pause, closes when the pointer leaves the panel
-      el.addEventListener('pointerenter', function (e) {
-        if (e.pointerType !== 'mouse' || dlg.open) return;
-        clearTimeout(hoverTimer);
-        hoverTimer = setTimeout(function () { originRect = el.getBoundingClientRect(); open(p, true); }, 250);
-      });
-      el.addEventListener('pointerleave', function () { clearTimeout(hoverTimer); });
       grid.appendChild(el);
     });
     filter(current);
