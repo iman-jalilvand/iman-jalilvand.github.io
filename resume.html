@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume | Iman Jalilvand, PhD, EIT</title>
+  <meta name="description" content="Resume of Iman Jalilvand: applied ML and reinforcement learning, XR and human-centered design, research and evaluation.">
+  <link rel="canonical" href="https://iman-jalilvand.github.io/resume.html">
+  <meta property="og:title" content="Iman Jalilvand, PhD, EIT">
+  <meta property="og:description" content="Applied AI, reinforcement learning and XR for industry.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://iman-jalilvand.github.io/images/iman.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- HEADER: identical on every page; only aria-current changes -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Iman Jalilvand <span>PhD, EIT</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav aria-label="Main">
+      <ul class="nav" id="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html" aria-current="page">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head">
+    <div class="wrap">
+      <h1>Resume</h1>
+      <p class="lede">The two-page version, also available as a PDF. Lines marked "View work" open the project behind them in my portfolio.</p>
+      <div class="resume-tools">
+        <div class="filters" role="group" aria-label="Resume focus">
+          <span class="lens-label">Focus:</span>
+          <button class="chip" data-lens-btn="all" aria-pressed="true">Everything</button>
+          <button class="chip" data-lens-btn="ai" aria-pressed="false">Applied AI and ML</button>
+          <button class="chip" data-lens-btn="xr" aria-pressed="false">XR and design</button>
+          <button class="chip" data-lens-btn="research" aria-pressed="false">Research and evaluation</button>
+        </div>
+        <a class="btn" href="files/Iman_Jalilvand_Resume.pdf" download>Download PDF (2 pages)</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <!-- THE SHEET: this is the 2-page resume (also printed to the PDF). Keep it to what fits on 2 pages. -->
+    <article class="sheet" id="sheet">
+      <h1>Iman Jalilvand, Ph.D., EIT</h1>
+      <p class="headline">Applied ML Scientist and Simulation Engineer | Reinforcement Learning, XR and Human-Centered Design</p>
+      <p class="contact">Edmonton, Alberta | <strong>Permanent Resident of Canada</strong> | <a href="mailto:iman.jalilvand@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/iman-jalilvand/">LinkedIn</a> | <a href="https://github.com/iman-jalilvand">GitHub</a> | <a href="https://scholar.google.ca/citations?user=L5xjYLYAAAAJ">Google Scholar</a> | <a href="https://iman-jalilvand.github.io/">Portfolio</a></p>
+
+      <h2>Professional summary</h2>
+      <p id="summary"></p>
+
+      <h2>Technical skills</h2>
+      <dl class="skills">
+        <dt data-lens="ai">Applied AI and RL</dt><dd data-lens="ai">Deep and multi-agent RL (PPO, MAPPO, DQN), transfer learning, reward shaping, domain randomization, Bayesian belief networks, classification and recommendation</dd>
+        <dt data-lens="ai">LLMs and agents</dt><dd data-lens="ai">LLM application development, grounding in validated system data, prompt design, tool-using and multi-agent workflows, evaluation against ground truth</dd>
+        <dt data-lens="ai xr">Programming</dt><dd data-lens="ai xr">Python (expert), PyTorch, TensorFlow, scikit-learn, NumPy, Pandas, SQL, C#, MATLAB, Git, CI/CD; Claude Code, Cursor, GitHub Copilot</dd>
+        <dt data-lens="xr">XR and real-time 3D</dt><dd data-lens="xr">Unity (6 years), MRTK, Unity ML-Agents, Microsoft HoloLens 2, Meta Quest, digital twins, Sketchfab</dd>
+        <dt data-lens="xr research">Design and UX</dt><dd data-lens="xr research">User-centered design, sketching and wireframing, information architecture, prototyping (Figma, Adobe XD), usability testing (SUS, UMUX)</dd>
+        <dt data-lens="research ai">Research and evaluation</dt><dd data-lens="research ai">Experimental design, surveys (Qualtrics), Likert scales, ANOVA, post-hoc tests, correlation, multicriteria decision analysis (TOPSIS), benchmarking and ablation</dd>
+        <dt data-lens="research">Engineering</dt><dd data-lens="research">SolidWorks, AutoCAD, CATIA, ANSYS FEA, COMSOL, heat transfer and process modelling</dd>
+      </dl>
+
+      <h2>Professional experience</h2>
+
+      <div class="role">
+        <div class="role-head"><h3>Research Associate (Postdoctoral Fellow)</h3><span class="when">Dec 2024 to Present</span></div>
+        <p class="org">Materials and Manufacturing Research Institute (MMRI), University of British Columbia</p>
+        <ul>
+          <li id="r-matrl" data-lens="ai">Developed MATRL, a multi-agent transfer reinforcement learning framework combining Multi-Agent PPO with transfer learning, cutting training time by 32% and energy use by nearly 40% against the multi-agent baseline (<a href="https://doi.org/10.1016/j.engappai.2026.114780">Engineering Applications of AI, 2026</a>). <a class="ev" href="portfolio.html#matrl">View work</a></li>
+          <li data-lens="ai">Designed the FCNN-MAPPO architecture, replacing recurrent policies with state augmentation to lower inference latency and parameter count while improving scalability.</li>
+          <li id="r-llm-coach" data-lens="ai xr">Built an LLM coaching system that grounds feedback in validated telemetry from a physics-based simulation, delivered in mixed reality; all six study participants improved, cutting zone error by 74.9% on average. US provisional patent application filed (2026). <a class="ev" href="portfolio.html#llm-coach">View work</a></li>
+          <li id="r-xr-dashboards" data-lens="xr research">Designed data-driven XR dashboards for operator training and decision support, from paper sketches to HoloLens 2, reducing trainees' spatial error by 74% across repeated runs (<a href="https://doi.org/10.1145/3772363.3798455">ACM CHI 2026</a>). <a class="ev" href="portfolio.html#xr-dashboards">View work</a></li>
+          <li id="r-bbn" data-lens="ai research">Built Bayesian belief network models linking process parameters to energy outcomes for explainable, probabilistic decision support (<a href="https://doi.org/10.46254/EU08.20250283">IEOM Europe, 2025</a>). <a class="ev" href="portfolio.html#bbn">View work</a></li>
+          <li data-lens="ai xr research">Lead and mentor six graduate researchers (three Ph.D., three M.Sc.) across four industry-supported projects, including a feasibility study for the HAZI Foundation in the Basque Country, Spain.</li>
+          <li data-lens="research">Contributed to $420K+ in research funding, including a $300K NSERC Alliance grant; grant writer for a $125K NSERC Idea to Innovation proposal.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head"><h3>Co-Founder and Chief Technology Officer</h3><span class="when">Present</span></div>
+        <p class="org">SustainPro Solutions Inc.</p>
+        <ul><li id="r-sustainpro" data-lens="ai xr">Lead AI and XR product development, turning life cycle and process data into decision-ready insight for manufacturers. <a class="ev" href="portfolio.html#more">View work</a></li></ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head"><h3>Research Consultant (part-time)</h3><span class="when">Jan 2026 to Present</span></div>
+        <p class="org">FEED Clean Tech Inc.</p>
+        <ul><li data-lens="research">Advise on data collection, evaluation planning and performance reporting for circular-materials and thermoforming pilots.</li></ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head"><h3>Founder</h3><span class="when">Sep 2024 to Sep 2025</span></div>
+        <p class="org">InnoXR, UBC Venture Founder Program</p>
+        <ul><li id="r-innoxr" data-lens="xr research">Ran 50+ customer discovery interviews across manufacturing, construction and technology, turning operational pain points into prototype requirements; secured support from Kohler, Dassault Systèmes and Cognitive3D. <a class="ev" href="portfolio.html#innoxr">View work</a></li></ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head"><h3>AI and XR Developer</h3><span class="when">Jan 2024 to Jul 2025</span></div>
+        <p class="org">Advanced BioCarbon 3D (ABC3D)</p>
+        <ul>
+          <li data-lens="ai">Built Python classification and recommendation models that rank sustainable material candidates for engineering decisions.</li>
+          <li id="r-abc3d" data-lens="xr">Added real-time 3D visualization that made model outputs interpretable to non-specialists, raising usability scores by 24%. <a class="ev" href="portfolio.html#abc3d">View work</a></li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head"><h3>Lecturer</h3><span class="when">2023 to 2026</span></div>
+        <p class="org">University of British Columbia (Computer Science, Engineering, Management); IGK College</p>
+        <ul>
+          <li id="r-cosc416" data-lens="xr">Designed and delivered the first offering of Game Development with Unity (COSC 416) for 152 students, with a GitHub organization of reusable C# modules and a two-week game jam; rated 4.8/5 by students and 6.4/7 by peer review. <a class="ev" href="portfolio.html#cosc416">View work</a></li>
+          <li id="r-imtc506" data-lens="xr research">Taught User-Centered Design in Immersive Technologies (IMTC 506, two years, rated 4.84/5) with 10 industry partners, Multicriteria Optimization and Design of Experiments (62 students), Emerging Technologies in Business, and three UI/UX courses. <a class="ev" href="portfolio.html#teaching-ucd">View work</a></li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head"><h3>Graduate Researcher</h3><span class="when">Sep 2020 to Dec 2024</span></div>
+        <p class="org">Composites Research Network (CRN), University of British Columbia</p>
+        <ul>
+          <li id="r-rl-testbed" data-lens="ai">Developed a PPO-based deep RL framework for real-time heating control, benchmarked against DQN across 30+ scenarios, reaching 37% faster convergence with lower energy use. <a class="ev" href="portfolio.html#rl-testbed">View work</a></li>
+          <li id="r-mr-training" data-lens="xr research">Built Unity mixed and virtual reality apps coupled to real-time heat simulation for HoloLens 2 and Meta Quest, and designed a 26-participant user study ranked with five multicriteria methods (<a href="https://doi.org/10.1016/j.jmsy.2023.11.007">Journal of Manufacturing Systems, 2024</a>). <a class="ev" href="portfolio.html#mr-training">View work</a></li>
+          <li data-lens="research">Completed Mitacs internships with lululemon (statistical analysis of fabric test data) and Advanced BioCarbon 3D; Head TA coordinating 12 TAs in CAD/CAM for 500+ students.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head"><h3>Design Engineer</h3><span class="when">Mar 2018 to Aug 2019</span></div>
+        <p class="org">MD Co., Tehran</p>
+        <ul><li data-lens="research">Produced parametric 3D models, assemblies and drawings in SolidWorks and AutoCAD, and verified designs with finite element analysis.</li></ul>
+      </div>
+
+      <h2>Education</h2>
+      <div class="role">
+        <div class="role-head"><h3>Ph.D., Mechanical Engineering (Machine Learning-Based Control)</h3><span class="when">2020 to 2025</span></div>
+        <p class="org">University of British Columbia. GPA 4.33/4.33. Thesis: Extended reality-based training and adaptive machine learning-based optimization for thermoforming. NSERC CREATE Immersive Technologies (CITech) certificate.</p>
+      </div>
+      <div class="role">
+        <div class="role-head"><h3>M.Sc., Mechatronics</h3><span class="when">2015 to 2018</span></div>
+        <p class="org" id="r-pipeline">Amirkabir University of Technology, Tehran. GPA 4.00/4.33. Structural health monitoring of buried pipelines with piezoelectric sensors. <a class="ev" href="portfolio.html#pipeline">View work</a></p>
+      </div>
+      <div class="role">
+        <div class="role-head"><h3>B.Sc., Mechanical Engineering</h3><span class="when">2011 to 2015</span></div>
+        <p class="org">Science and Research Azad University, Tehran. GPA 3.92/4.33. Engineer-in-Training (EIT).</p>
+      </div>
+
+      <h2>Selected publications and patent</h2>
+      <ul class="pubs-list">
+        <li data-lens="ai">Jalilvand, I., et al. (2026). Integrating transfer learning into multi-agent reinforcement learning for energy-efficient adaptive control of heating systems in thermoforming. <em>Engineering Applications of Artificial Intelligence.</em> <a href="https://doi.org/10.1016/j.engappai.2026.114780">doi:10.1016/j.engappai.2026.114780</a></li>
+        <li data-lens="xr research">Jalilvand, I., Gopaluni, B., and Milani, A. S. (2026). Data-driven extended reality dashboards: integrating operator training and decision support in manufacturing. <em>CHI EA '26, Barcelona.</em> <a href="https://doi.org/10.1145/3772363.3798455">doi:10.1145/3772363.3798455</a></li>
+        <li data-lens="ai xr">Jalilvand, I., and Milani, A. S. (2026). Integrating simulation-based LLM coaching for adaptive mixed-reality manufacturing training. <em>HCII 2026 Posters, Springer.</em> <a href="https://doi.org/10.1007/978-3-032-30816-0_19">doi:10.1007/978-3-032-30816-0_19</a></li>
+        <li data-lens="xr research">Jalilvand, I., Jang, J., Gopaluni, B., and Milani, A. S. (2024). VR/MR systems integrated with heat transfer simulation for training of thermoforming: a multicriteria decision-making user study. <em>Journal of Manufacturing Systems, 72.</em> <a href="https://doi.org/10.1016/j.jmsy.2023.11.007">doi:10.1016/j.jmsy.2023.11.007</a></li>
+        <li data-lens="ai research">Jalilvand, I., et al. (2025). Optimizing energy-intensive heating processes in manufacturing using Bayesian belief networks. <em>IEOM Europe, Paris.</em> <a href="https://doi.org/10.46254/EU08.20250283">doi:10.46254/EU08.20250283</a></li>
+        <li data-lens="ai xr">Jalilvand, I., Milani, A. S., and Gopaluni, B. US Provisional Patent Application 64/093,684 (2026): physics-informed immersive analytics and edge-interface system with adaptive coaching for manufacturing operator decision support.</li>
+      </ul>
+
+      <h2 id="recognition">Recognition and leadership</h2>
+      <ul>
+        <li>McCall MacBain Postdoctoral Leadership Program, one of 32 national scholars (2025); UBC Dean's Award for Knowledge Translation and Entrepreneurship (2024); Silver Award, HCI International Student Design Competition (2023).</li>
+        <li>Co-editor, Elsevier book <em>Beyond Immersion: Extended Reality Design for Human-Centric Intelligent Systems</em> (forthcoming); reviewer for ACM CHI 2026 and Robotics and Computer-Integrated Manufacturing; invited speaker, AI Forum, Canada-Korea Conference (2026).</li>
+      </ul>
+    </article>
+
+    <!-- WEB-ONLY DETAIL: not in the PDF. Collapsed by default. -->
+    <section class="more" aria-label="Full record">
+      <details id="teaching">
+        <summary>Teaching <span>8 courses as instructor, plus open tutorials</span></summary>
+        <div class="inner">
+          <div class="table-scroll">
+          <table>
+            <thead><tr><th>Course</th><th>Where</th><th>Term</th><th>Students</th></tr></thead>
+            <tbody>
+              <tr><td>Multicriteria Optimization and Design of Experiments (ENGR 489/589)</td><td>UBC Engineering</td><td>2026</td><td>62</td></tr>
+              <tr><td>Emerging Technologies in Business (MGMT 536b)</td><td>UBC Management</td><td>2026</td><td>14</td></tr>
+              <tr><td><a href="portfolio.html#teaching-ucd">User-Centered Design in Immersive Technologies (IMTC 506)</a></td><td>UBC CITech</td><td>2025 and 2026</td><td>13+</td></tr>
+              <tr><td><a href="portfolio.html#cosc416">Game Development with Unity (COSC 416)</a></td><td>UBC Computer Science</td><td>2025</td><td>152</td></tr>
+              <tr><td><a href="portfolio.html#tutorials">XR Development with Unity (micro-credential)</a></td><td>UBC CITech</td><td>2024</td><td>15</td></tr>
+              <tr><td>Information Architecture; Prototyping and Wireframing; UX Portfolio Capstone</td><td>IGK College</td><td>2023 to 2024</td><td>8 each</td></tr>
+              <tr><td>Head TA and TA: APSC 171, VANT 151, ENGR 380</td><td>UBC Engineering</td><td>2021 to 2024</td><td>650+</td></tr>
+            </tbody>
+          </table>
+          </div>
+          <p style="margin-top:1rem">Open resources: <a href="portfolio.html#tutorials">XR development tutorials</a>, <a href="https://github.com/UBCO-COSC-416">COSC 416 GitHub organization</a> (with TAs Rishav Banerjee and Omang Baheti), <a href="https://www.youtube.com/playlist?list=PLBTEPhxxp5YEFeEoeZ1RV7ol4Nw2Ur3iy">lecture recordings</a>.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>All publications <span>journals, conferences and reports</span></summary>
+        <div class="inner">
+          <ol>
+            <li>Jalilvand, I., Soufi Enayati, A. M., Hosseinionari, H., Seethaler, R., Narayan, A., Gopaluni, B., and Milani, A. S. (2026). Integrating transfer learning into multi-agent reinforcement learning for energy-efficient adaptive control of heating systems in thermoforming. Engineering Applications of Artificial Intelligence. <a href="https://doi.org/10.1016/j.engappai.2026.114780">DOI</a></li>
+            <li>Krishnamurthy, R. J., Lo, V., Jang, J., Jalilvand, I., et al. (2025). Exploring different communication modes for intravenous infusion training using mixed reality. Computers in Human Behavior Reports. <a href="https://doi.org/10.1016/j.chbr.2025.100814">DOI</a></li>
+            <li>Jalilvand, I., Jang, J., Gopaluni, B., and Milani, A. S. (2024). VR/MR systems integrated with heat transfer simulation for training of thermoforming. Journal of Manufacturing Systems. <a href="https://doi.org/10.1016/j.jmsy.2023.11.007">DOI</a></li>
+            <li>Hosseinionari, H., Seethaler, R., Krishnamurthy, R. J., Jalilvand, I., and Milani, A. S. (2024). A scalable multi-agent deep reinforcement learning in thermoforming. Journal of Manufacturing Processes. <a href="https://doi.org/10.1016/j.jmapro.2024.09.019">DOI</a></li>
+            <li>Jalilvand, I., Gopaluni, B., and Milani, A. S. (2026). Data-driven extended reality dashboards. CHI EA '26, Barcelona. <a href="https://doi.org/10.1145/3772363.3798455">DOI</a></li>
+            <li>Jalilvand, I., and Milani, A. S. (2026). Integrating simulation-based LLM coaching for adaptive mixed-reality manufacturing training. HCII 2026 Posters. <a href="https://doi.org/10.1007/978-3-032-30816-0_19">DOI</a></li>
+            <li>Shamshirsaz, M., and Jalilvand, I. (2026). Damage detection in fuel transfer pipelines caused by ground subsidence using the electro-mechanical impedance method. 25th WPC Energy Congress, Riyadh.</li>
+            <li>Jalilvand, I., Akbarian-Saravi, N., Crawford, B., Gopaluni, B., and Milani, A. S. (2025). Optimizing energy-intensive heating processes using Bayesian belief networks. IEOM Europe, Paris. <a href="https://doi.org/10.46254/EU08.20250283">DOI</a></li>
+            <li>Akbarian-Saravi, N., Crawford, B., Jalilvand, I., Sowlati, T., and Milani, A. S. (2025). Modelling and sustainability assessment of biocomposites supply chain networks using Bayesian belief networks. IEOM Europe, Paris. <a href="https://doi.org/10.46254/EU08.20250285">DOI</a></li>
+            <li>Jalilvand, I., Gopaluni, B., and Milani, A. S. (2024). Towards a robust deep reinforcement learning for optimization of heating setup in thermoforming. IISE Annual Conference. <a href="https://iise.confex.com/iise/2024/meetingapp.cgi/Paper/7645">Link</a></li>
+            <li>Jalilvand, I., Jang, J., Hosseinionari, H., Seethaler, R., Gopaluni, B., and Milani, A. S. (2023). An interactive digital twin of a composite manufacturing process for training operators via immersive technology. HCII 2023, Silver Award. <a href="https://doi.org/10.1007/978-3-031-36004-6_28">DOI</a></li>
+            <li>Jalilvand, I. (2025). Extended reality-based training and adaptive machine learning-based optimization for thermoforming process. Ph.D. thesis, UBC. <a href="https://open.library.ubc.ca/collections/ubctheses/24/items/1.0447767">Link</a></li>
+          </ol>
+        </div>
+      </details>
+
+      <details>
+        <summary>Talks <span>invited and conference</span></summary>
+        <div class="inner">
+          <ul>
+            <li>AI Forum, Canada-Korea Conference, Vancouver, June 2026.</li>
+            <li>Inclusive and engaging user study design: from recruitment to retention. REWLI workshop, UBC Okanagan, November 2025.</li>
+            <li>Beyond static training: adaptive and intelligent XR systems for operator instruction. Immersive Research Symposium, UBC, April 2025.</li>
+            <li>Artificial intelligence, ethics and engineering research. Engineering Graduate Student Workshop, UBC, February 2024.</li>
+            <li>Extended reality-based training and user study design. Immersive Research Symposium, UBC, May 2023.</li>
+          </ul>
+        </div>
+      </details>
+    </section>
+  </div>
+</main>
+
+<!-- FOOTER: identical on every page. Icons are inline SVG, so they always load. -->
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <ul class="contact-list">
+      <li><a href="mailto:iman.jalilvand@gmail.com"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 6.1L19.8 6H4.2zM20 7.9l-7.4 5.8a1 1 0 0 1-1.2 0L4 7.9V18h16V7.9z"/></svg></span>Email</a></li>
+      <li><a href="https://www.linkedin.com/in/iman-jalilvand/"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></span>LinkedIn</a></li>
+      <li><a href="https://github.com/iman-jalilvand"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.36.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3"/></svg></span>GitHub</a></li>
+      <li><a href="https://scholar.google.ca/citations?user=L5xjYLYAAAAJ"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.24 13.77 0 9.5 12 0l12 9.5-5.24 4.27A7.5 7.5 0 0 0 12 9.5a7.5 7.5 0 0 0-6.76 4.27zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></span>Google Scholar</a></li>
+    </ul>
+    <p class="fine">© <span id="year">2026</span> Iman Jalilvand. Text, images and videos on this site may not be reused without permission. Publications are shown as summaries with links to the publishers.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/resume.js"></script>
+</body>
+</html>

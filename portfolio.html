@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Iman Jalilvand, PhD, EIT</title>
+  <meta name="description" content="Projects in reinforcement learning, LLM decision support, mixed reality, human-centred design and teaching by Iman Jalilvand.">
+  <link rel="canonical" href="https://iman-jalilvand.github.io/portfolio.html">
+  <meta property="og:title" content="Iman Jalilvand, PhD, EIT">
+  <meta property="og:description" content="Applied AI, reinforcement learning and XR for industry.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://iman-jalilvand.github.io/images/iman.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- HEADER: identical on every page; only aria-current changes -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Iman Jalilvand <span>PhD, EIT</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav aria-label="Main">
+      <ul class="nav" id="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head">
+    <div class="wrap">
+      <h1>Portfolio</h1>
+      <p class="lede">Working examples of what my resume describes: the video, design process, data and published paper behind each project.</p>
+      <p class="how-to">Hover over a project to preview it. Click to keep it open.</p>
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="chip" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="ml" aria-pressed="false">AI and RL</button>
+          <button class="chip" data-filter="xr" aria-pressed="false">XR</button>
+          <button class="chip" data-filter="design" aria-pressed="false">Design and UX</button>
+          <button class="chip" data-filter="research" aria-pressed="false">Research</button>
+          <button class="chip" data-filter="teaching" aria-pressed="false">Teaching</button>
+          <button class="chip" data-filter="venture" aria-pressed="false">Ventures</button>
+        </div>
+        <!-- PROTOTYPE ONLY: compare redrawn charts with paper figures. Remove once decided. -->
+        <div class="seg" role="group" aria-label="Figure style preview">Figures:
+          <span class="opts"><button data-style="redrawn" aria-pressed="true">Redrawn</button><button data-style="paper" aria-pressed="false">From papers</button></span>
+        </div>
+      </div>
+      <!-- Tiles are generated from the PROJECTS list in assets/js/portfolio.js -->
+      <div class="bento" id="bento"></div>
+    </div>
+  </section>
+
+  <!-- TUTORIALS: open teaching resources. Videos play from YouTube (views count on the channel). -->
+  <section class="section" id="tutorials">
+    <div class="wrap">
+      <h2>Tutorials</h2>
+      <p class="lede">A short introduction to XR development with Unity, recorded for new researchers and practitioners.</p>
+      <div class="tut-grid">
+        <article class="tut">
+          <button class="shot" data-yt="FAoEzTeejHU" aria-label="Play: session 1, Unity installation and introduction"></button>
+          <h3>Session 1: Getting started with Unity</h3>
+          <p>Installing Unity Hub and the Editor, then finding your way around scenes, GameObjects and components.</p>
+        </article>
+        <article class="tut">
+          <button class="shot" data-yt="Z5kWBLXhfaQ" aria-label="Play: session 2, setting up VR and AR development"></button>
+          <h3>Session 2: Setting up for VR and AR</h3>
+          <p>Headsets, SDKs and the XR Interaction Toolkit, ending in a first interactive scene with teleporting and grabbing.</p>
+        </article>
+        <article class="tut">
+          <button class="shot" data-yt="MjMdLJVPpp8" aria-label="Play: session 3, C# scripting in Unity"></button>
+          <h3>Session 3: C# scripting in Unity</h3>
+          <p>From C# basics to MonoBehaviour, moving objects with keyboard and mouse input, plus a short assignment.</p>
+        </article>
+      </div>
+
+      <div class="res-grid">
+        <a class="res" href="https://www.youtube.com/@COSC416"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg></span><span><b>COSC 416 channel</b><span class="d">Video guides for every assignment</span></span></a>
+        <a class="res" href="https://www.youtube.com/playlist?list=PLBTEPhxxp5YEFeEoeZ1RV7ol4Nw2Ur3iy"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h12v2H3zm0 4h12v2H3zm0 4h8v2H3zm13 0v8l6-4z"/></svg></span><span><b>Lecture recordings</b><span class="d">In-class sessions, Game Development with Unity</span></span></a>
+        <a class="res" href="https://github.com/UBCO-COSC-416"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.36.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3"/></svg></span><span><b>Course GitHub organization</b><span class="d">Guides, templates and assignment repos</span></span></a>
+        <a class="res" href="https://github.com/UBCO-COSC-416/COSC416_InClass_Demo"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.6 16.6 4 12l4.6-4.6L7.2 6 1.2 12l6 6 1.4-1.4zm6.8 0L20 12l-4.6-4.6L16.8 6l6 6-6 6-1.4-1.4z"/></svg></span><span><b>In-class demo repo</b><span class="d">One running example, built up session by session</span></span></a>
+      </div>
+      <p class="tut-credit">Course GitHub organization co-developed with teaching assistants Rishav Banerjee and Omang Baheti.</p>
+    </div>
+  </section>
+
+  <!-- MORE WORK: smaller items, one line each -->
+  <section class="section" id="more">
+    <div class="wrap">
+      <h2>More work</h2>
+      <ul class="more-work">
+        <li><a href="https://sustainpro.ca">SustainPro: decision-ready sustainability analytics</a><span>Co-Founder</span></li>
+        <li><span style="color:var(--text)">Industry 4.0 feasibility study for sawmills in the Basque Country, Spain</span><span>HAZI Foundation, CORS 2025</span></li>
+        <li><span style="color:var(--text)">AR digital twin for warehouse inventory</span><span>Schneider Go Green finalist, 2022</span></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<dialog class="lightbox" id="lightbox" aria-label="Media viewer">
+  <button class="btn ghost close">Close</button>
+  <div class="frame"></div>
+</dialog>
+
+<dialog class="drawer" id="drawer" aria-label="Project details">
+  <button class="btn ghost close">Close</button>
+  <div class="inner"></div>
+</dialog>
+
+<!-- FOOTER: identical on every page. Icons are inline SVG, so they always load. -->
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <ul class="contact-list">
+      <li><a href="mailto:iman.jalilvand@gmail.com"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 6.1L19.8 6H4.2zM20 7.9l-7.4 5.8a1 1 0 0 1-1.2 0L4 7.9V18h16V7.9z"/></svg></span>Email</a></li>
+      <li><a href="https://www.linkedin.com/in/iman-jalilvand/"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></span>LinkedIn</a></li>
+      <li><a href="https://github.com/iman-jalilvand"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.36.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3"/></svg></span>GitHub</a></li>
+      <li><a href="https://scholar.google.ca/citations?user=L5xjYLYAAAAJ"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.24 13.77 0 9.5 12 0l12 9.5-5.24 4.27A7.5 7.5 0 0 0 12 9.5a7.5 7.5 0 0 0-6.76 4.27zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></span>Google Scholar</a></li>
+    </ul>
+    <p class="fine">© <span id="year">2026</span> Iman Jalilvand. Text, images and videos on this site may not be reused without permission. Publications are shown as summaries with links to the publishers.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/portfolio.js"></script>
+</body>
+</html>

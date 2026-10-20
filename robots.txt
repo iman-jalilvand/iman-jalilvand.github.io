@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iman-jalilvand.github.io/sitemap.xml
